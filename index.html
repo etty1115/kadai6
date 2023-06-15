@@ -1,0 +1,50 @@
+// index.html
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>書籍検索</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">書籍検索サービス</h1>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <form id="search-form">
+        <div class="search-options">
+          <label>
+            <input type="checkbox" name="experience" value="営業経験">営業経験
+          </label>
+          <label>
+            <input type="checkbox" name="experience" value="人事労務経験">人事労務経験
+          </label>
+          <label>
+            <input type="checkbox" name="experience" value="カスタマーサクセス経験">カスタマーサクセス経験
+          </label>
+          <label>
+            <input type="checkbox" name="experience" value="SaaS経験">SaaS経験
+          </label>
+        </div>
+        <button class="search-button" type="submit">検索</button>
+      </form>
+
+      <div id="search-results" class="search-results"></div>
+      <div id="favorite-books" class="favorite-books"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 書籍検索サービス. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
